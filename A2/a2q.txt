@@ -1,0 +1,16 @@
+1: pretty print question
+if the given input program is suh as 
+
+def int gcd(int a, int b)
+if (a==b) then return (a) 
+fi; if ... efd
+
+do i print 
+
+dfe int gcd(int a, int b)
+	if (a == b) then
+		return (a)
+	...
+..
+fed; 
+or whole thing is not in pretty print??

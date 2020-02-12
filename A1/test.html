@@ -1,0 +1,26 @@
+<span style="color:aqua">def </span> <span style="color:purple">int </span> <span style="color:darkcyan">gcd </span><span style="color:blue">( </span><span style="color:purple">int </span> <span style="color:darkcyan">a </span><span style="color:blue">, </span> <span style="color:purple">int </span> <span style="color:darkcyan">b </span><span style="color:blue">) </span>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:grey">if</span><span style="color:blue">( </span><span style="color:darkcyan">a </span><span style="color:orange">== </span><span style="color:darkcyan">b </span><span style="color:blue">) </span> <span style="color:fuchsia">then </span>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:darkblue">return </span> <span style="color:blue">( </span><span style="color:darkcyan">a </span><span style="color:blue">) </span> 
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:grey">fi </span><span style="color:blue">; </span>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:grey">if</span><span style="color:blue">( </span><span style="color:darkcyan">a </span><span style="color:orange">> </span><span style="color:darkcyan">b </span><span style="color:blue">) </span> <span style="color:fuchsia">then </span>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:darkblue">return </span><span style="color:blue">( </span><span style="color:darkcyan">gcd </span><span style="color:blue">( </span><span style="color:darkcyan">a </span><span style="color:orange">- </span><span style="color:darkcyan">b </span><span style="color:blue">, </span><span style="color:darkcyan">b </span><span style="color:blue">) </span><span style="color:blue">) </span>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:grey">else </span> 
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:darkblue">return </span><span style="color:blue">( </span><span style="color:darkcyan">gcd </span><span style="color:blue">( </span><span style="color:darkcyan">a </span><span style="color:blue">, </span><span style="color:darkcyan">b </span><span style="color:orange">- </span><span style="color:darkcyan">a </span><span style="color:blue">) </span><span style="color:blue">) </span> 
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:grey">fi </span><span style="color:blue">; </span>
+</br>
+<span style="color:aqua">fed </span><span style="color:blue">; </span>
+</br>
+<span style="color:darkblue">print </span> <span style="color:darkcyan">gcd </span><span style="color:blue">( </span><span style="color:green">21 </span><span style="color:blue">, </span><span style="color:green">15 </span><span style="color:blue">) </span><span style="color:black">.</span>
+
+
+<!--
+<DEF> <INT> <ID, '16'> <OPEN_BRACKET, '('> <INT> <ID, '17'> <COMMA> <INT> <ID, '18'> <CLOSED_BRACKET, ')'> <IF> <OPEN_BRACKET, '('> <ID, '17'> <OPERATOR, '=='> <ID, '18'> <CLOSED_BRACKET, ')'> <THEN> <RETURN> <OPEN_BRACKET, '('> <ID, '17'> <CLOSED_BRACKET, ')'> <FI> <SEMICOLON> <IF> <OPEN_BRACKET, '('> <ID, '17'> <OPERATOR, '>'> <ID, '18'> <CLOSED_BRACKET, ')'> <THEN> <RETURN> <OPEN_BRACKET, '('> <ID, '16'> <OPEN_BRACKET, '('> <ID, '17'> <OPERATOR, '-'> <ID, '18'> <COMMA> <ID, '18'> <CLOSED_BRACKET, ')'> <CLOSED_BRACKET, ')'> <ELSE> <RETURN> <OPEN_BRACKET, '('> <ID, '16'> <OPEN_BRACKET, '('> <ID, '17'> <COMMA> <ID, '18'> <OPERATOR, '-'> <ID, '17'> <CLOSED_BRACKET, ')'> <CLOSED_BRACKET, ')'> <FI> <SEMICOLON> <FED> <SEMICOLON> <PRINT> <ID, '16'> <OPEN_BRACKET, '('> <INTEGER, '21'> <COMMA> <INTEGER, '15'> <CLOSED_BRACKET, ')'> <TERMINATE> 
+-->
