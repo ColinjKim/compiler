@@ -221,7 +221,12 @@ public class Parse{
                 buffer+=ccharac;
                 getNextLexm();
             }
-            if(ccharac!='.'){
+            if(checkAlpha()){
+                tokens.add(new Token("ERROR"));
+                addHTML("ERROR", buffer);
+                return;
+            }
+            else if(ccharac!='.'){
                 tokens.add(new Token("INTEGER",buffer));
                 addHTML("INTEGER", buffer);
                 getNextToken();
@@ -278,6 +283,7 @@ public class Parse{
                     return;
                 }
             }
+            
         }
         else{
             // System.out.println("here we are");
