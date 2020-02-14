@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 import java.io.IOException;
-public class LexAn{ 
+public class Parse{ 
     // public static List<String> hold = new ArrayList<String>();
     // public static List<ccharac> stream = new ArrayList<ccharac>();
     public static List<Token> tokens = new ArrayList<Token>();
