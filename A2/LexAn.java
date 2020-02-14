@@ -11,10 +11,12 @@ public class LexAn{
     public static char ccharac;
     public static boolean flag = true;
     public static List<String> html = new ArrayList<String>();
+    public static List<Character> codes = new ArrayList<Character>();
     public static void main(String args[]){
         startSetup();
         try{
             ccharac = (char)System.in.read();
+            codes.add(ccharac);
             while(ccharac!=(char)-1){
                 // System.out.println(a);
                 getNextToken();
@@ -24,10 +26,10 @@ public class LexAn{
         catch (IOException e){
             System.out.println("Error reading from user");
         }
-        //printing html
-        for(int i=0; i<html.size();i++){
-            System.out.print(html.get(i));
-        }
+        // //printing html
+        // for(int i=0; i<html.size();i++){
+        //     System.out.print(html.get(i));
+        // }
         log("\n");
         log("\n");
         log("\n");
@@ -41,6 +43,10 @@ public class LexAn{
         }
         log("\n");
         System.out.println("-->");
+
+        for(int i=0; i < codes.size(); i++){
+            System.out.print(codes.get(i));
+        }
     }
     
     public static void log(String s){
@@ -141,6 +147,7 @@ public class LexAn{
     public static void getNextLexm(){
         try{
             ccharac = (char)System.in.read();
+            codes.add(ccharac);
             // System.out.println("current val "+ccharac);
         }
         catch (IOException e){
